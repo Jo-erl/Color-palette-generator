@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Joel Anang" />
+    <meta name="description" content="Free color palette generator of designers and web developers" />
+    <meta name="keywords" content="color, scheme, color scheme, color generator, designer, web developer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="icon" href="ajlogo.png" type="image/x-icon">
+
+
+    <title>Color Palette by JoErl</title>
+</head>
+
+<body>
+    <header>
+        <h1>Color Palette Generator</h1>
+
+
+    </header>
+    <div class="input-container">
+        <div class="color-container">
+            <label for="base-color">Base Color:</label>
+            <input type="color" id="base-color" value="#ff0000">
+        </div>
+        <div class="category-container">
+            <label for="category-select">Category:</label>
+            <select id="category-select">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome Dark</option>
+                <option value="monochrome-light">Monochrome Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic Complement</option>
+            </select>
+        </div>
+        <button id="generate-button">Palette</button>
+        <button id="generate-tip">Tips</button>
+
+        <div id="tips-container">
+            <div id="tips-content">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>Select preferred base color</li>
+                    <li>Select category</li>
+                    <li>Click on "Palette" to get the color scheme based on selection</li>
+                    <li>Click on the hex color code to copy to clipboard</li>
+                    <li>Done!</li>
+                </ol>
+                <a href="https://www.instagram.com/gra.ffi.que" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div id="color-scheme"></div>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
