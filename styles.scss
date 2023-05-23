@@ -50,8 +50,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: calc(100vh - 180px); /* Subtract header and input container heights */
-  overflow-y: hidden; /* Hide vertical scrollbar */
+  height: calc(100vh - 180px);
 }
 
 .color {
@@ -61,12 +60,12 @@ main {
   align-items: center;
   justify-content: center;
   height: 80;
-  width: 1000px; /* Adjust the width as desired */
-  height: calc((100vh - 0px) / 1.5); /* Adjust the height as desired */
+  width: 1000px;
+  height: calc((100vh - 0px) / 1.5);
   position: relative;
   border-radius: 10px;
   margin-top: 20px;
-  margin-bottom: 20px; /* Add desired bottom margin space */
+  margin-bottom: 20px;
 }
 
 .color p {
@@ -105,7 +104,7 @@ label {
   position: fixed;
   top: 50%;
   left: 50%;
-  background-color: rgba(0, 0, 0, 0.937); /* Updated with transparency */
+  background-color: rgba(0, 0, 0, 0.937);
   transform: translate(-50%, -50%);
   color: #fff;
   padding: 10px;
@@ -203,8 +202,13 @@ label {
 }
 
 @media (max-width: 767px) {
-    .copy-message {
-      display: none;
-    }
+  .copy-message {
+    display: none;
   }
-  
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
