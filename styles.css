@@ -88,7 +88,7 @@ input[type=color] {
   background-color: #000000;
   color: #fff;
   border-radius: 12px;
-  font-size: 12px;
+  font-size: 15px;
   padding: 0 15px;
   font-family: "Poppins", sans-serif;
 }
@@ -155,7 +155,7 @@ label {
     background-color: #000000;
     color: #fff;
     border-radius: 12px;
-    font-size: 10px;
+    font-size: 15px;
     font-family: "Poppins", sans-serif;
     padding: 0 12px;
   }
