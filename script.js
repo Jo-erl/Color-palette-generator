@@ -5,6 +5,12 @@ const colorSchemeDiv = document.getElementById("color-scheme");
 
 let colorArr = [];
 
+window.addEventListener("load", () => {
+  colorInput.value = "#c20084"; // Set initial color to red
+  categorySelect.value = "monochrome"; // Set category to monochrome
+  generateButton.click(); // Trigger the generateButton click event to generate the color palette
+});
+
 generateButton.addEventListener("click", (e) => {
   e.preventDefault();
 
