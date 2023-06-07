@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@font-face {
+  font-family: "MTNBrighterSans-Regular";
+  src: url("ttf/MTNBrighterSans-Medium.ttf") format("truetype"),
 
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
 }
+
+* {
+  font-family: "MTNBrighterSans-Regular";
+}
+
 
 header {
   background-color: #333;
