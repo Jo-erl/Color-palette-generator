@@ -16,4 +16,6 @@ User-Friendly Interface: The tool provides an intuitive and visually pleasing in
 Contributions to the Palette Generator project are highly appreciated! If you encounter any issues, have suggestions for improvements, or would like to add new features, please feel free to submit a pull request.
 
 <h1>License</h1>
-This project is licensed under the MIT License.
+This project is licensed under the MIT License.<br><br>
+
+<i>Unlock your creativity with the Palette Generator and simplify the process of color selection in your design and development workflows. If you have any questions or require assistance, don't hesitate to reach out.</i>
