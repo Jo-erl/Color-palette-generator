@@ -1,5 +1,5 @@
 <h1>Palette Generator</h1>
-The Palette Generator is a powerful tool designed to assist designers and developers in generating and copying hex color codes to their clipboards. This GitHub repository provides a ready-to-use solution for integrating the Palette Generator into your web projects.
+The Palette Generator is a powerful tool designed to assist designers and developers in generating and copying hex color codes to their clipboards. This GitHub repository provides a ready-to-use solution for integrating the Palette Generator into your web projects.<br><br>
 
 <a href="https://jo-erl.github.io/palettegenerator/">Demo Link</a>
 
