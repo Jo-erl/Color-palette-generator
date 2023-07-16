@@ -1,7 +1,5 @@
-@import url("https://fonts.cdnfonts.com/css/poppins");
-
 * {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -12,30 +10,33 @@ body {
 }
 
 header {
-  background-color: #333;
   padding: 20px;
   text-align: center;
 }
 
 header h1 {
   color: #fff;
+  font-size: 24px;
   margin: 0;
-  padding: 0;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: #000;
+
 }
 
 .input-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 20px;
   background-color: #eeeeee;
-  border-radius: 20px;
   padding: 20px;
+  width: auto;
 }
 
 .color-container,
 .category-container {
-  margin: 0 10px;
+  margin: 0;
+
 }
 
 #category-select {
@@ -47,7 +48,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 200px;
+  min-height: auto;
+  margin-bottom: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
+
 }
 
 #color-scheme {
@@ -56,6 +61,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   height: calc(100vh - 180px);
+
 }
 
 .color {
@@ -65,7 +71,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 80;
-  width: 1000px;
+  width: 700px;
   height: calc((100vh - 0px) / 1.5);
   position: relative;
   border-radius: 10px;
@@ -85,18 +91,46 @@ h2 {
   margin: 10px 0;
 }
 
-input[type="color"] {
+input[type=color] {
   height: 25px;
   width: 60px;
 }
 
+#generate-tip{
+  padding:1px 1px;
+  margin: 5px;
+}
+
 #generate-button {
   background-color: #000000;
-  color: #fff;
-  border-radius: 12px;
-  font-size: 15px;
-  padding: 0 15px;
-  font-family: "Poppins", sans-serif;
+  padding: 5px 10px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px #000000b7;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; /* Set a higher z-index value */
+}
+
+#generate-button::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(109, 0, 100);
+  color: #ffffff;
+  width: 0px;
+  height: 0px;
+  left: var(--xPos);
+  top: var(--yPos);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: width 0.6s, height 0.6s;
+  z-index: -1; /* Set a lower z-index value */
+}
+
+#generate-button:hover::before {
+  width: 300px;
+  height: 300px;
 }
 
 label {
@@ -109,7 +143,7 @@ label {
   position: fixed;
   top: 50%;
   left: 50%;
-  background-color: rgba(0, 0, 0, 0.937);
+  background-color: rgb(0, 0, 0);
   transform: translate(-50%, -50%);
   color: #fff;
   padding: 10px;
@@ -133,6 +167,7 @@ label {
 
 #tips-content h3 {
   margin: 0 0 10px;
+  font-weight: 400;
 }
 
 #tips-content ol {
@@ -141,14 +176,10 @@ label {
 
 #tips-content li {
   margin-bottom: 5px;
+  font-weight: 250;
+
 }
 
-#tips-container .fab {
-  display: flex;
-  justify-content: center;
-  font-size: 24px;
-  color: #fc0380;
-}
 
 @media (max-width: 768px) {
   #color-scheme {
@@ -158,21 +189,39 @@ label {
     align-items: center;
     height: calc((100vh - 100px) / 1.3);
   }
-
   #generate-button {
     background-color: #000000;
-    color: #fff;
-    border-radius: 12px;
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-    padding: 0 12px;
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px #000000b7;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    text-align: center;
   }
+  #generate-button::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(109, 0, 100);
+    width: 0px;
+    height: 0px;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.6s, height 0.6s;
+  }
+  
+  #generate-button:hover::before {
+    width: 300px;
+    height: 300px;
 
+  }
   .color {
-    width: calc((100vh - 0px) / 1.5);
+    width: calc((100vh - 0px) / 1.7);
     margin: 0;
   }
 }
+
 
 .toast {
   position: fixed;
@@ -180,7 +229,6 @@ label {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: black;
-
   color: white;
   padding: 10px;
   border-radius: 10px;
@@ -189,7 +237,7 @@ label {
 
 .copy-message {
   position: absolute;
-  top: -50px;
+  top: -65px;
   left: 0;
   right: 0;
   text-align: center;
@@ -214,14 +262,14 @@ label {
     display: none;
   }
 }
-
 footer {
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #1e1e1e;
+  background-color: #000000;
   color: #ffffff;
   padding: 5px;
   text-align: center;
   font-size: 14px;
-}
+}/*# sourceMappingURL=styles.css.map */

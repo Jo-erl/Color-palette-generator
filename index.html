@@ -11,6 +11,9 @@
     <meta name="keywords" content="color, scheme, color scheme, color generator, designer, web developer" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="ajlogo.png" type="image/x-icon">
 
 
@@ -20,9 +23,8 @@
 <body>
     <header>
         <h1>Color Palette Generator</h1>
-
-
     </header>
+
     <div class="input-container">
         <div class="color-container">
             <label for="base-color">Base Color:</label>
@@ -38,9 +40,9 @@
                 <option value="complement">Complement</option>
                 <option value="analogic-complement">Analogic Complement</option>
             </select>
+            
         </div>
-        <button id="generate-button">Palette</button>
-        <button id="generate-tip">Tips</button>
+        <button id="generate-button">Generate</button>
 
         <div id="tips-container">
             <div id="tips-content">
@@ -52,19 +54,21 @@
                     <li>Click on the hex color code to copy to clipboard</li>
                     <li>Done!</li>
                 </ol>
-                <a href="https://www.instagram.com/gra.ffi.que" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-instagram"></i>
-                </a>
+                
             </div>
         </div>
     </div>
+
+    <button id="generate-tip">Tips</button>
+
     <main>
+        
         <div id="color-scheme"></div>
     </main>
     <script src="script.js"></script>
 
     <footer>
-        <p>All Rights Reserved. &copy; <span id="currentYear"></span>. <a href="https://jo-erl.github.io/joelanangportfolio/" style="color: rgb(0, 255, 68);" target="_blank">JoErl</a>
+        <p>All Rights Reserved &copy; <span id="currentYear"></span> <a href="https://jo-erl.github.io/joelanangportfolio/" style="color: rgb(0, 255, 68);" target="_blank">JoErl</a>
   
         </p>
       </footer>
