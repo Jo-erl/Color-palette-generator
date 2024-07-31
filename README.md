@@ -1,5 +1,5 @@
 <h1>Palette Generator</h1>
-A simple responsve color palette generator for designers and developers.<br><br>
+A simple responsive color palette generator for designers and developers.<br><br>
 
 <a href="https://jo-erl.github.io/palettegenerator/">Demo Link</a><br><br>
 
