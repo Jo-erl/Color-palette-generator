@@ -1,5 +1,5 @@
 <h1>Palette Generator</h1>
-A responsve color palette generator designed to assist designers and developers in generating and copying hex color codes to their clipboards.<br><br>
+A simple responsve color palette generator for designers and developers.<br><br>
 
 <a href="https://jo-erl.github.io/palettegenerator/">Demo Link</a><br><br>
 
