@@ -29,7 +29,15 @@
 * {
   font-family: "MTNBrighterSans", sans-serif;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
 /*=======================================================*/
 body {
   padding: 0;
@@ -127,7 +135,6 @@ h1 {
 }
 .gen-btn:hover {
   background-color: #000000 !important;
-  transform: scaleX(0.9);
 }
 /*=======================================================*/
 .control-group label {
